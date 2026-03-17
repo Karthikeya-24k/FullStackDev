@@ -7,3 +7,4 @@ public class AddRequest {
     private Double a;
     private Double b;
 }
+

@@ -12,8 +12,8 @@ function Add() {
 
     axios.
     post("http://localhost:8080/addition", {
-      a: parseInt(a),
-      b: parseInt(b)
+      a: a,
+      b: b
     })
     .then((res) => {
       console.log(res.data);
