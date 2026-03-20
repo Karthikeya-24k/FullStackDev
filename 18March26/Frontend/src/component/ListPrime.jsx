@@ -18,7 +18,7 @@ function ListPrime() {
         isPrime = false;
       } else {
         // Standard prime logic: check divisors from 2 up to half the number
-        for (let j = 2; j <= currentNum / 2; j++) {
+        for (let j = 2; j <= currentNum / 2+1; j++) {
           if (currentNum % j === 0) {
             isPrime = false;
             break; // Stop looking if we found a divisor
@@ -26,7 +26,7 @@ function ListPrime() {
         }
       }
 
-      // 2. Build the string using standard concatenation (no $ used)
+      // 2. Build the string using standard concatenation
       if (isPrime) {
         tempResults.push(currentNum + " is a prime number");
       } else {
