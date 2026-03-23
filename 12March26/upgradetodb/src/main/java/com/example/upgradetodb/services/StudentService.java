@@ -37,7 +37,7 @@ public class StudentService {
 
         repository.save(students);
 
-        return new StudentResponse(students.getId(), students.getName(), savedRegister.getRegNumber());
+        return new StudentResponse(students.getId(), students.getName(), savedRegister.getRegNumber()); 
     }
 }
         
